@@ -10,12 +10,17 @@ class ticktack
 		{
 			for(j=0;j<3;j++)
 			{
-				arr[i][j]="-";
-				System.out.print("\t"+arr[i][j]);
+				arr[i][j]=" ";
 			}
-			System.out.println();
-			System.out.println();
+			
 		}
+		
+		System.out.println("|"+arr[0][0]+"|"+arr[0][1]+"|"+arr[0][2]+"|");
+		System.out.println("|-----|");
+		System.out.println("|"+arr[1][0]+"|"+arr[1][1]+"|"+arr[1][2]+"|");
+		System.out.println("|-----|");
+		System.out.println("|"+arr[2][0]+"|"+arr[2][1]+"|"+arr[2][2]+"|");
+		
 		System.out.println("Player 1 insert x");
 		System.out.println("Player 2 insert O");
 		for(;;)
@@ -29,15 +34,13 @@ class ticktack
 					int r=scan.nextInt();
 					int c=scan.nextInt();
 					arr[r][c]="x";
-					for(i=0;i<3;i++)
-					{
-						for(j=0;j<3;j++)
-						{
-							System.out.print("\t"+arr[i][j]);
-						}
-						System.out.println();
-						System.out.println();
-					}
+					
+		System.out.println("|"+arr[0][0]+"|"+arr[0][1]+"|"+arr[0][2]+"|");
+		System.out.println("|-----|");
+		System.out.println("|"+arr[1][0]+"|"+arr[1][1]+"|"+arr[1][2]+"|");
+		System.out.println("|-----|");
+		System.out.println("|"+arr[2][0]+"|"+arr[2][1]+"|"+arr[2][2]+"|");
+	
 					int res=diduwin(arr);
 					if(res==1)
 						break;
@@ -52,15 +55,14 @@ class ticktack
 					int r=scan.nextInt();
 					int c=scan.nextInt();
 					arr[r][c]="o";
-					for(i=0;i<3;i++)
-					{
-						for(j=0;j<3;j++)
-						{
-							System.out.print("\t"+arr[i][j]);
-						}
-						System.out.println();
-						System.out.println();
-					}
+					
+					
+		System.out.println("|"+arr[0][0]+"|"+arr[0][1]+"|"+arr[0][2]+"|");
+		System.out.println("|-----|");
+		System.out.println("|"+arr[1][0]+"|"+arr[1][1]+"|"+arr[1][2]+"|");
+		System.out.println("|-----|");
+		System.out.println("|"+arr[2][0]+"|"+arr[2][1]+"|"+arr[2][2]+"|");
+		
 					int res=diduwin(arr);
 					if(res==1)
 						break;
